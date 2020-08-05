@@ -22,7 +22,6 @@ const Header = () => {
             alt="Current user"
             className="user-nav__user-photo"
           ></img>
-          />
           <span className="user-nav__user-name">Jonas</span>
         </div>
       </nav>

@@ -2,20 +2,36 @@
   height: 7rem;
   background-color: #fff;
   border-bottom: 2px solid var(--grey-light-2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
   height: 3.25rem;
+  margin-left: 2rem;
 }
 .user-nav {
-  &__icon-box {
+  display: flex;
+  align-self: stretch;
+
+  & > * {
+    padding: 0 2rem;
+    height: 100%;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    &:hover {
+      background-color: var(--grey-light-2);
+    }
   }
-  &__user {
-  }
+
   &__user-name {
+    font-size: 1.6rem;
   }
   &__user-photo {
-    height: 3.75rem;
-    border-radius: 0.5rem;
+    height: 4rem;
+    border-radius: 100rem;
+    margin-right: 1rem;
   }
 }
