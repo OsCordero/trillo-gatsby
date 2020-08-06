@@ -1,0 +1,60 @@
+.description-card {
+  background-color: #fff;
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
+  font-size: 1.4rem;
+}
+
+.list {
+  list-style: none;
+  margin: 3rem 0;
+  padding: 3rem 0;
+  border-top: var(--underline);
+  border-bottom: var(--underline);
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    flex: 0 0 50%;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 2rem;
+      height: 2rem;
+      margin-right: 0.5rem;
+      background-color: var(--primary);
+      mask-image: url(../../assets/img/chevron-thin-right.svg);
+      mask-size: cover;
+    }
+  }
+}
+.paragraph:not(:last-of-type) {
+  margin-bottom: 2rem;
+}
+
+.recommend {
+  color: var(--grey-dark-2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__friends {
+    display: flex;
+  }
+
+  &__photo {
+    box-sizing: content-box;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: inline-block;
+    border: 3px solid #fff;
+    margin-left: -1.5rem;
+
+    &:not(:last-child) {
+    }
+  }
+}

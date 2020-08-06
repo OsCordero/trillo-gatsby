@@ -1,10 +1,29 @@
+@import "../../styles/variables";
+
 .header {
-  height: 7rem;
+  min-height: 7rem;
   background-color: #fff;
-  border-bottom: 2px solid var(--grey-light-2);
+  border-bottom: var(--underline);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+@media only screen and (max-width: $xx-small) {
+  .header {
+    min-height: 14rem;
+    flex-wrap: wrap;
+    align-content: space-around;
+    &__searchbar {
+      order: 1;
+      flex: 0 0 90% !important;
+      margin: 0 auto;
+    }
+  }
 }
 
 .logo {

@@ -9,7 +9,7 @@ const Sidebar = () => {
     <nav className="sidebar">
       <ul className="side-nav">
         {items.map(item => (
-          <li className="side-nav__item" key={item.name}>
+          <li className="side-nav__item" key={item.text}>
             <Link
               to={item.url}
               className="side-nav__link"

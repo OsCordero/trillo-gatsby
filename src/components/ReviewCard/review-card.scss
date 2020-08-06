@@ -1,0 +1,59 @@
+@import "../../styles/variables";
+.review {
+  background-color: #fff;
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
+  margin-bottom: 3rem;
+  font-size: 1.4rem;
+  position: relative;
+  @media only screen and (max-width: $large) {
+    margin-bottom: 2.5rem;
+  }
+
+  @media only screen and (max-width: $small) {
+    margin-bottom: 2.5rem;
+    padding: 2rem;
+  }
+
+  &::before {
+    content: "\201c";
+    position: absolute;
+    top: -3rem;
+    left: -0.5rem;
+    font-size: 20rem;
+    font-family: sans-serif;
+    line-height: 1;
+    color: var(--grey-light-2);
+    z-index: 1;
+  }
+
+  &__text {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  &__photo {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+  }
+  &__data {
+    margin-right: auto;
+    margin-left: 2rem;
+  }
+  &__rating {
+    color: var(--primary);
+    font-size: 2.2rem;
+  }
+
+  &__user-name {
+    font-weight: 600;
+    font-size: 1.8rem;
+  }
+}

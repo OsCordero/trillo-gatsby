@@ -1,0 +1,76 @@
+@import "../../styles/variables";
+
+.gallery {
+  display: flex;
+  &__photo {
+    width: 100%;
+    display: block;
+  }
+}
+.overview {
+  display: flex;
+  border-bottom: var(--underline);
+  align-items: center;
+
+  @media only screen and (max-width: $xxx-small) {
+    flex-wrap: wrap;
+  }
+  &__heading {
+    font-size: 2.25rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1.3rem 3rem;
+    @media only screen and (max-width: $x-small) {
+      font-size: 1.8rem;
+      padding: 1.25rem 2rem;
+    }
+  }
+  &__stars {
+    margin-right: auto;
+    display: flex;
+  }
+
+  &__icon-location,
+  &__icon-start {
+    width: 2rem;
+    height: 2rem;
+    fill: var(--primary);
+  }
+
+  &__icon-location {
+    margin-right: 1rem;
+  }
+
+  &__location {
+    font-size: 1.4rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+  }
+  &__rating {
+    background-color: var(--primary);
+    color: #fff;
+    margin-left: 3rem;
+    align-self: stretch;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media only screen and (max-width: $x-small) {
+      padding: 1.5rem;
+    }
+  }
+  &__rating-average {
+    font-size: 2.25rem;
+    @media only screen and (max-width: $x-small) {
+      font-size: 1.8rem;
+    }
+  }
+  &__rating-counts {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
