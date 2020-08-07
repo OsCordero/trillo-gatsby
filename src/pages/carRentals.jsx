@@ -2,11 +2,13 @@ import React from "react";
 import Layout from "../components/Layout/Layout";
 import SEO from "../components/SEO/SEO";
 
-export default function Flights() {
+const carRentals = () => {
   return (
     <Layout>
-      <SEO title="Flights" />
-      <h1>Flights!</h1>
+      <SEO title="Car Rentals" />
+      <h1>Car Rentals!</h1>
     </Layout>
   );
-}
+};
+
+export default carRentals;
